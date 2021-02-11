@@ -26,8 +26,8 @@ User inputs a word or phrase and the program outputs an encoded message. If the 
 
 | Describe | Test | Expect |
 |:--------:|:--------:|:--------:|
-|`encode()`| "It will recognizes only letters in a string and normalize the string (remove spaces & lowercase)" | (pigLatin("Hi there!")).toEqual(hithere)) |
-|`encode()`| "It will recognize the length of a string and output an encoded message with equal rows and columns if the length is a square number" | (pigLatin("four")).toEqual("fuor") |
+|`encode()`| "It will recognizes only letters in a string and normalize the string (remove spaces & lowercase)" | (encode("Hi there!")).toEqual(hithere)) |
+|`encode()`| "It will recognize the length of a string and output an encoded message with equal rows and columns if the length is a square number" | (encode("four")).toEqual("fuor") |
 |`encode()`| "If the string's length is not a square number, it will add " " until the string's length is a square number and output an encoded message" | (encode("air")).toEqual("ari ") |
 
 
