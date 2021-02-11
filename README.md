@@ -24,15 +24,11 @@ text
 
 ## Tests
 
-Describe: makeItSquare(str);
-Test: "It intakes a string and outputs the length."
-Expect: makeItSquare("cat")toEqual(3)
-
-Test: "It recognizes the strings length and confirms if it's a square number"
-Expect: makeItSquare("hiya")toEqual(true)
-
-Test: "For inputted strings that are square number, it prints them out in an array where the number of columns is equal to the square root of the length of the string."
-Expect: makeItSquare("hiya").toEqual(true)
+| Describe | Test | Expect |
+|:--------:|:--------:|:--------:|
+|`encode()`| "It will recognizes only letters in a string and normalize the string (remove spaces & lowercase)" | (pigLatin("Hi there!")).toEqual(hithere)) |
+|`encode()`| "It will recognize the length of a string and output an encoded message with equal rows and columns if the length is a square number" | (pigLatin("four")).toEqual("fuor") |
+|`encode()`| "If the string's length is not a square number, it will add " " until the string's length is a square number and output an encoded message" | (pigLatin("chair")).toEqual("airchay") |
 
 ## Link
 
