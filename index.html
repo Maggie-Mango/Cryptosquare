@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <title>ENTER TITLE</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
+  <title>Crypto Square</title>
 </head>
 <body>
-
-
-
-
-
+  <div class="container">
+    <div class="row ">
+      <div class="col-md-12 pad-adjust">
+        <h1>Crypto Square</h1>
+        <form id="word">
+          <label for="message">Insert your message for an encoded message:</label>
+          <input class="form-control" id="message" type="text" placeholder="I was born on a pirate ship"  required>
+          <button type="submit" class="btn-success" >Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="output"></div>   
+  </div>
 </body>
 </html>
